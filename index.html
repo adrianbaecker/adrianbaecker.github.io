@@ -13,20 +13,22 @@
     match.id = "match";
     document.getElementById("table").appendChild(match);
     
+    const matchid = document.getElementById("match");
+    
     const date = document.createElement("span");
     date.innerText = example_date + " ";
-    document.getElementById("match").appendChild(date); 
+    matchid.appendChild(date); 
     
     const matchup = document.createElement("span");
     matchup.innerText = example_matchup + " ";
-    document.getElementById("match").appendChild(matchup);
+    matchid.appendChild(matchup);
     
     const result = document.createElement("span");
     result.innerText = example_result;
-    document.getElementById("match").appendChild(result);
+    matchid.appendChild(result);
     
     const br = document.createElement("br");
-    document.getElementById("match").appendChild(br);
+    matchid.appendChild(br);
 
   }
 </script>
